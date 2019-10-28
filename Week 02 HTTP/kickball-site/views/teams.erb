@@ -1,0 +1,10 @@
+<h1>The KickBall League</h1>
+
+<% @league.teams.each do |team| %>
+  <p>
+    <a href="/team/<%= team.name %>"><%= team.name %></a>
+  </p>
+<% end %>
+<p>
+  <a href="/positions">Positions</a>
+</p>

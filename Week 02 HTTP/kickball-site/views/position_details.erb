@@ -1,0 +1,8 @@
+<h1> <%= @position_name %> </h1>
+<ul>
+  <% @list_of_players.each do |team, player|%>
+    <li> <b> <%= team %> </b>: <%= player %></li>
+  <% end %>
+</ul>
+
+<a href="/positions">Back</a>

@@ -1,0 +1,11 @@
+<h1>Positions</h1>
+
+<ul>
+  <% @list_of_pos.each do |pos| %>
+    <li>
+      <a href="/position/<%= pos %>"><%= pos %></a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/teams">Back</a>
